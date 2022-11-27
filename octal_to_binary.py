@@ -1,0 +1,14 @@
+n=int(input())
+i=0
+dec=0
+while(n>0):
+    rem=n%10
+    dec=dec+rem*(8**i)
+    n//=10
+    i+=1
+result='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'
+while(dec>0):
+    rem=dec%2
+    result=str(rem)+result
+    dec//=2
+print(result)
